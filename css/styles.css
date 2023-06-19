@@ -16,6 +16,9 @@ li {
     height: 36px;
 }
 
+body {
+    overflow: hidden;
+}
 
 .header {
     background-color: #eb5757;
@@ -46,6 +49,27 @@ li {
     border: none;
     padding: 6px 15px;
 }
+
+.cart-popup {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    display: none;
+    padding: 10px;
+    right: 50%;
+}
+
+.header-nav-cart {
+    position: relative;
+}
+
+.header-nav-cart:hover .cart-popup {
+    display: block;
+}
+
 
 .header-navbar-list {
     font-family: 'Sen', sans-serif;
